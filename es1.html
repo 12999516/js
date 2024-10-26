@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>anno bisestile</title>
+</head>
+<body>
+<div id="bis"></div>
+<script type="text/javascript">
+    let anno=prompt("inserisci l'anno");
+    let ann=parseInt(anno);
+    let soluzione;
+
+    if(ann % 400 === 0 || ann % 4 === 0 && ann % 100 != 0){
+        soluzione = "l'anno " + ann +" è bisestile";
+    }else{
+        soluzione = "l'anno " + ann +" non è bisestile";
+    }
+    document.getElementById("bis").innerHTML= soluzione;
+</script>
+</body>
